@@ -1,0 +1,28 @@
+<template>
+    <div class="wrapper">
+        <div class="slds-p-around_none header_color">
+            <c-my-resume-header
+                user-details={RESUME_DATA.USER_DETAILS}
+                profile-image={PROFILE_IMAGE}
+            ></c-my-resume-header>
+        </div>
+        <div class="slds-p-around_none">
+            <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_4-of-12 slds-large-size_4-of-12 shade" style="background-color: #d9d9d9;">
+                    <c-my-resume-other-information 
+                    school-info={RESUME_DATA.EDUCATION_DATA}
+                    skills={RESUME_DATA.SKILLS}
+                    social-details={SOCIAL_LINKS}
+                    user-details={RESUME_DATA.USER_DETAILS}
+                    ></c-my-resume-other-information>
+                </div>
+    
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_8-of-12 slds-large-size_8-of-12">
+                    <c-my-resume-experience details={RESUME_DATA.EXPERIENCE_DATA}>
+
+                    </c-my-resume-experience>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
