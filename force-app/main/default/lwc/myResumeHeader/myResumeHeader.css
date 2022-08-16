@@ -1,67 +1,65 @@
-
-:host{
-    --main-dark:  #444343;/*rgb(35, 163,179)*/
-    --main-light: #d9d9d9;/*rgba(35, 163,179,0.5)*/
-    --main-black: #1e1f22;
-    --main-white: #ffffff;
-    --main-font: arial; 
+:host {
+  --main-dark: #444343; /*rgb(35, 163,179)*/
+  --main-light: #d9d9d9; /*rgba(35, 163,179,0.5)*/
+  --main-black: #1e1f22;
+  --main-white: #ffffff;
+  --main-font: arial;
 }
-.m-auto{
-    margin: auto;
+.m-auto {
+  margin: auto;
 }
-.profile_pic{
-    width: 300px;
+.profile_pic {
+  width: 300px;
 }
-.shade{   
-    background-color: var(--main-light);
+.shade {
+  background-color: var(--main-light);
 }
-header{
-    position: relative;
+header {
+  position: relative;
 }
-.nameHeading{
-    position: absolute;
-    top: 240px;
-    left: 0;
-    width: 100%;
-    background-color: var(--main-dark);
-    opacity: 0.9;
-    padding: 0.35rem 2rem;
-    color: var(--main-white);
-    font-family: var(--main-font);
-    font-size: 2.2rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.05rem;
+.nameHeading {
+  position: absolute;
+  top: 242px;
+  left: 0;
+  width: 100%;
+  background-color: var(--main-dark);
+  opacity: 0.9;
+  padding: 0.35rem 2rem;
+  color: var(--main-white);
+  font-family: var(--main-font);
+  font-size: 2.2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
 }
-.roleHeading{
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--main-black);
-    padding: 4.5rem 2rem 3rem 2.5rem;
+.roleHeading {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--main-black);
+  padding: 4.5rem 2rem 3rem 2.5rem;
 }
 
 @media only screen and (max-width: 600px) {
-    .mobile_text_center{
-        text-align: center;
-    }
-    .nameHeading{
-        position: absolute;
-        bottom: 205px;   
-        left: 0px;
-        width: 100%;
-        background-color: var(--main-dark);
-        opacity: 0.9;
-        font-size: 15px;
-        padding: 0.8rem 0;
-
-    }
-    .roleHeading{
-        font-size: 0.75rem;
-        font-weight: 500;
-        color: var(--main-black);
-        padding: 1rem 1rem;
-    }
-    .mobile{
-        font-size: 14px;
-    }
+  .mobile_text_center {
+    text-align: center;
   }
+  .nameHeading {
+    position: absolute;
+    bottom: 205px;
+    left: 0px;
+    width: 100%;
+    background-color: var(--main-dark);
+    opacity: 0.9;
+    font-size: 15px;
+    padding: 0.8rem 0;
+  }
+  .roleHeading {
+    font-size: 0.65rem;
+    font-weight: 500;
+    color: var(--main-black);
+    padding: 1rem 1rem;
+  }
+  .mobile {
+    font-size: 14px;
+  }
+}

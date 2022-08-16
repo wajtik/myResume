@@ -1,52 +1,87 @@
 <!-- sldsValidatorIgnore -->
 <!-- sldsValidatorIgnore -->
 <template>
-    <section>
-        <!--PERSONAL DETAILS-->
-            <div class="slds-var-p-around_medium slds-col slds-size_1-of-1 slds-medium-size_9-of-12 slds-large-size_9-of-12">
-            <ul class="small_font">
-                <li class="slds-var-m-bottom_small">
-                    <a href={phoneLink} class="link">
-                        <lightning-icon icon-name="utility:dialing" alternative-text="dialing" size="x-small" 
-                        title="dialing" class="slds-var-m-right_small"></lightning-icon>
-                        {userDetails.PHONE}
-                    </a>
-                </li>
-                <li class="slds-var-m-bottom_small">
-                    <a href={emailLink} class="link">
-                        <lightning-icon icon-name="utility:email" alternative-text="email" size="x-small" 
-                        title="email" class="slds-var-m-right_small"></lightning-icon>
-                        {userDetails.EMAIL}
-                    </a>
-                </li>  
-                <!--SOCIAL MEDIA LINKS-->
-                <template for:each={socialDetails} for:item="item">
-                    <li class="slds-var-m-bottom_small" key={item.type}>
-                        <a href={item.link} target="_blank" class="link">
-                            <img src={item.icon} alt={item.type} width="20px" class="slds-var-m-right_small" />
-                            <span>{item.label}</span>
-                        </a>
-                    </li>
-                </template>       
-            </ul>
+  <!--PERSONAL DETAILS-->
+  <div class="slds-var-p-around_x-large mobile_padding">
+    <h2 class="slds-is-relative section_heading">{userDetails.HEADING}</h2>
+    <ul class="slds-var-m-bottom_large">
+      <li class="slds-var-m-bottom_xxx-small">
+        <a href={phoneLink} class="link">
+          <img src={userDetails.PHONE_ICON} alt="phone" class="link_img" />
+          {userDetails.PHONE}
+        </a>
+      </li>
+      <li class="slds-var-m-bottom_small">
+        <a href={emailLink} class="link_underline">
+          <img src={userDetails.EMAIL_ICON} alt="email" class="link_img" />
+          {userDetails.EMAIL}
+        </a>
+      </li>
+      <li class="slds-var-m-bottom_small">
+        <a href={userDetails.LOCATION} class="link_underline">
+          <img src={userDetails.HOME_ICON} alt="address" class="link_img" />
+          {userDetails.ADDRESS}
+        </a>
+      </li>
+    </ul>
+    <!--SOCIAL MEDIA LINKS-->
+    <h2 class="slds-is-relative section_heading">{socialDetails.HEADING}</h2>
+    <ul class="slds-var-m-bottom_large">
+      <template for:each={socialDetails.LINKS} for:item="item">
+        <li class="slds-var-m-bottom_xxx-small" key={item.type}>
+          <a href={item.link} target="_blank" class="link">
+            <img src={item.icon} alt={item.type} class="link_img" />
+            <span>{item.label}</span>
+          </a>
+        </li>
+      </template>
+    </ul>
 
+    <!--EDUCATION-->
+    <h2 class="slds-is-relative section_heading">{schoolInfo.HEADING}</h2>
+    <ul class="slds-var-m-bottom_large">
+      <template for:each={schoolInfo.SCHOOL_TYPES} for:item="item">
+        <li
+          class="slds-var-m-bottom_xxx-small school_individual"
+          key={item.DURATION}
+        >
+          <h3>{item.DURATION}</h3>
+          <div class="school_name">{item.SCHOOL_NAME}</div>
+          <h3 class="school_field">{item.FIELD}</h3>
+        </li>
+      </template>
+    </ul>
+    <!--LANGUAGES-->
+    <h2 class="slds-is-relative section_heading">{languages.HEADING}</h2>
+    <ul class="slds-var-m-bottom_large">
+      <template for:each={languages.LANGUAGES} for:item="item">
+        <li
+          key={item.Name}
+          class="slds-var-m-bottom_xxx-small school_individual"
+        >
+          {item.NAME}
+          <c-my-resume-progress-bar
+            progress-value={item.LEVEL}
+          ></c-my-resume-progress-bar>
+        </li>
+      </template>
+    </ul>
+    <!--SKILLS-->
+    <h2 class="slds-is-relative section_heading">{skills.HEADING}</h2>
+    <ul class="slds-var-m-bottom_large">
+      <template for:each={skills.SKILLS} for:item="skill">
+        <li key={skill.HEADING} class="slds-var-m-bottom_medium">
+          <h4 class="skill_heading">{skill.HEADING}</h4>
+          <template for:each={skill.SKILLS_LIST} for:item="skillList">
+            <div key={skillList.Name} class="slds-var-m-top-x-small">
+              <div class="skill_field">{skillList.NAME}</div>
+              <c-my-resume-progress-bar
+                progress-value={skillList.LEVEL}
+              ></c-my-resume-progress-bar>
             </div>
-            
-            <!--div class="slds-col slds-size_1-of-1 slds-medium-size_3-of-12 slds-large-size_3-of-12 m-auto">
-                
-            </div-->     
-
-        <h2 class="slds-is-relative section_heading">{schoolInfo.HEADING}</h2>
-        <div>
-            <div class="slds-var-p-left_x-large slds-is-relative school_content">
-                <template for:each={schoolInfo.SCHOOL_TYPES} for:item="item">
-                    <section key={item.DURATION} class="school_individual slds-is-relative">
-                        <h3 style="padding-top: 0.5rem;"> {item.DURATION} - {item.DEGREE}</h3>
-                        <div class="school_name">{item.SCHOOL_NAME}</div>
-                        <h3 class="school_field">{item.FIELD}</h3>
-                    </section>
-                </template>
-            </div>
-        </div>
-    </section>
+          </template>
+        </li>
+      </template>
+    </ul>
+  </div>
 </template>

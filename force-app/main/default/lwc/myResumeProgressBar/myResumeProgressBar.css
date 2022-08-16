@@ -1,0 +1,25 @@
+:host {
+  --main-dark: #444343; /*rgb(35, 163,179)*/
+  --main-light: #b1b1b1; /*rgba(35, 163,179,0.5)*/
+  --main-black: #1e1f22;
+  --main-white: #ffffff;
+  --main-light-blue: #40b3db;
+  --main-font: arial;
+}
+.progress {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  background-color: var(--main-light);
+  height: 0.5rem;
+}
+.progress_bar {
+  border-right: 3px solid rgb(243, 237, 237);
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+  transition: width 0.6s ease;
+  background-color: var(--main-dark);
+  width: 100%;
+}

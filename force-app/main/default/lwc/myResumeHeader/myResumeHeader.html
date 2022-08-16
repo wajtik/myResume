@@ -1,23 +1,31 @@
 <!-- sldsValidatorIgnore -->
 <!-- sldsValidatorIgnore -->
 <template>
-      <header>
-        <div class="slds-var-p-around_none slds-grid slds-wrap">  
-            <!--IMAGE-->
-            <div class="slds-col slds-size_1-of-1 slds-medium-size_4-of-12 slds-large-size_4-of-12">
-                <img src={profileImage} alt="profile pic" class="profile-pic"/>
-            </div>
+  <header>
+    <div class="slds-var-p-around_none slds-grid slds-wrap">
+      <!--IMAGE-->
+      <div
+        class="slds-col slds-size_1-of-1 slds-medium-size_4-of-12 slds-large-size_4-of-12"
+      >
+        <img src={profileImage} alt="profile pic" class="profile-pic" />
+      </div>
 
-            <div class="slds-col slds-size_1-of-1 slds-medium-size_8-of-12 slds-large-size_8-of-12 shade">
-                <div class="roleHeading"><span class="mobile" style="font-weight:900;">{userDetails.ROLE}</span> &nbsp;
-                    I am a self-motivated professional passionate about quality control. 
-                    I have almost 10 years of work-related experience in Quality assurance in the automotive 
-                    industry. I am punctual, dependable and can be counted upon to finish what I start. I consider 
-                     myself hardworking, reliable, helpful, outgoing, organized, honest and cooperative.
-                    
-                </div>
-                <span class="nameHeading mobile_text_center">{userDetails.NAME}</span>
-            </div>    
+      <div
+        class="slds-col slds-size_1-of-1 slds-medium-size_8-of-12 slds-large-size_8-of-12 shade"
+      >
+        <div class="roleHeading">
+          <span class="mobile" style="font-weight: 900"
+            >{userDetails.ROLE}</span
+          >
+          &nbsp; I am a self-motivated professional passionate about quality
+          control. I have almost 10 years of work-related experience in Quality
+          assurance in the automotive industry. I am punctual, dependable and
+          can be counted upon to finish what I start. I consider myself
+          hardworking, reliable, helpful, outgoing, organized, honest and
+          cooperative.
         </div>
-    </header>
+        <span class="nameHeading mobile_text_center">{userDetails.NAME}</span>
+      </div>
+    </div>
+  </header>
 </template>

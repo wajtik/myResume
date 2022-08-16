@@ -1,23 +1,26 @@
 <template>
-    <section>
-        <h2 class="slds-is-relative section_heading">{details.HEADING}</h2>
-        <div>
-            <div class="slds-var-p-left_x-large slds-is-relative workExp_content">
-                <template for:each={details.EXPERIENCES} for:item="item">
-                    <section key={item.DURATION} class="workExp_individual slds-is-relative">
-                        <h3 style="padding-top: 0.5rem;"> {item.DURATION}</h3>
-                        <h3 class="working_role">{item.ROLE}</h3>
-                        <div class="company_name">{item.COMPANY_NAME}</div>
-                        <div class="slds-var-m-bottom_small">
-                            <ul class="description_point_box">
-                                <template for:each={item.DESCRIPTION} for:item="desc">
-                                    <li key={desc}>{desc}</li>
-                                </template>
-                            </ul>
-                        </div>
-                    </section>
+  <section>
+    <h2 class="slds-is-relative section_heading">{details.HEADING}</h2>
+    <div>
+      <div class="slds-var-p-left_x-large slds-is-relative workExp_content">
+        <template for:each={details.EXPERIENCES} for:item="item">
+          <section
+            key={item.DURATION}
+            class="workExp_individual slds-is-relative"
+          >
+            <h3 style="padding-top: 0.5rem">{item.DURATION}</h3>
+            <h3 class="working_role">{item.ROLE}</h3>
+            <div class="company_name">{item.COMPANY_NAME}</div>
+            <div class="slds-var-m-bottom_small">
+              <ul class="description_point_box">
+                <template for:each={item.DESCRIPTION} for:item="desc">
+                  <li key={desc}>{desc}</li>
                 </template>
+              </ul>
             </div>
-        </div>
-    </section>
+          </section>
+        </template>
+      </div>
+    </div>
+  </section>
 </template>
