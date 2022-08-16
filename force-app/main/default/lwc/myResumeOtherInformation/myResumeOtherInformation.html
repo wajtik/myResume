@@ -83,5 +83,12 @@
         </li>
       </template>
     </ul>
+    <!--INTERESTS-->
+    <h2 class="slds-is-relative section_heading">{heading.HEADING}</h2>
+    <ul class="slds-var-m-bottom_large ul_interest">
+      <template for:each={interests} for:item="tag">
+        <li key={tag} class="slds-var-m-bottom_xxx-small li_interest">{tag}</li>
+      </template>
+    </ul>
   </div>
 </template>

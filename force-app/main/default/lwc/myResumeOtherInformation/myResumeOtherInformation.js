@@ -6,6 +6,8 @@ export default class MyResumeOtherInformation extends LightningElement {
   @api languages;
   @api socialDetails;
   @api userDetails;
+  @api interests;
+  @api heading;
 
   get phoneLink() {
     return `tel:${this.userDetails.PHONE}`;

@@ -33,7 +33,7 @@ export const SOCIAL_LINKS = {
 };
 export const USER_DETAILS = {
   HEADING: "CONTACT ME",
-  NAME: "Ing. Radoslav Biely",
+  NAME: "Radoslav Biely",
   ROLE: "JUNIOR SALESFORCE DEVELOPER",
   ADDRESS: "Janovik 162, 082 03 Janovik",
   LOCATION:
@@ -113,7 +113,7 @@ export const SKILLS_DATA = {
     },
     {
       HEADING: "CRM",
-      SKILLS_LIST: [{ NAME: "SALESFORCE", LEVEL: "50" }]
+      SKILLS_LIST: [{ NAME: "SALESFORCE", LEVEL: "40" }]
     }
   ]
 };
@@ -124,4 +124,9 @@ export const LANGUAGES_DATA = {
     { NAME: "Slovak (Native)", LEVEL: "100" },
     { NAME: "English", LEVEL: "70" }
   ]
+};
+
+export const INTEREST_DATA = {
+  HEADING: "INTERESTS",
+  LIST: ["Gym", "Hiking", "Traveling"]
 };

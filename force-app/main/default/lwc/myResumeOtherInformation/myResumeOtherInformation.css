@@ -61,6 +61,24 @@ span {
 .skill_field {
   font-size: 12px;
 }
+.ul_interest {
+  display: flex;
+  flex-direction: column wrap;
+  justify-content: space-between;
+}
+.li_interest {
+  width: 30%;
+  padding: 0.2rem;
+  border: 1px solid var(--main-dark);
+  border-radius: var(--main-radius);
+  background-color: var(--main-dark);
+  color: var(--main-white);
+  text-align: center;
+}
+.margin_top {
+  margin-top: 0;
+  background-color: red;
+}
 
 @media only screen and (max-width: 600px) {
   .mobile_padding {
