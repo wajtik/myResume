@@ -92,3 +92,27 @@ div.company_name {
 span {
   font-weight: 900;
 }
+
+@media only screen and (max-width: 600px) {
+  .mobile_padding {
+    padding: 0.8rem;
+  }
+  .workExp_content:before,
+  .workExp_individual:after,
+  .workExp_individual:before {
+    content: none;
+  }
+  .workExp_content {
+    padding-left: 0;
+  }
+  h3.working_role {
+    font-size: 16px;
+  }
+  div.company_name {
+    font-weight: 700;
+    font-size: 15px;
+  }
+  .school_field {
+    margin-bottom: 0.1;
+  }
+}

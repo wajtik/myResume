@@ -24,14 +24,19 @@
     </div>
   </section>
   <section>
-    <h2 class="slds-is-relative section_heading">CERTIFICATIONS</h2>
+    <h2 class="slds-is-relative slds-var-m-top_large section_heading">
+      {certification.HEADING}
+    </h2>
     <ul class="description_point_box">
-      <li><span>Junior Salesforce developer</span> at Green Fox Academy</li>
-      <li><span>Process auditor VDA 6.3 (2016)</span></li>
+      <template for:each={certification.CERTIFICATES} for:item="cert">
+        <li key={cert}><span>{cert.NAME}</span> - ({cert.DESCRIPTION})</li>
+      </template>
     </ul>
   </section>
   <section>
-    <h2 class="slds-is-relative section_heading">REFERENCES</h2>
+    <h2 class="slds-is-relative slds-var-m-top_large section_heading">
+      REFERENCES
+    </h2>
     <ul class="description_point_box">
       <li>References available on request</li>
     </ul>

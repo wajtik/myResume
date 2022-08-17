@@ -34,7 +34,9 @@ export const SOCIAL_LINKS = {
 export const USER_DETAILS = {
   HEADING: "CONTACT ME",
   NAME: "Radoslav Biely",
-  ROLE: "JUNIOR SALESFORCE DEVELOPER",
+  ROLE: "JUNIOR SOFTWARE DEVELOPER",
+  SUMMARY:
+    "Dependable and self-motivated professional with 9+ years of work-related experience in Quality assurance in the automotive industry. Seeking to start a career in IT as Junior developer. Hoping to combine excellent customer service skills, technical knowledge and attention to detail to provide an exciting and easy-to-use app experience for users.",
   ADDRESS: "Janovik 162, 082 03 Janovik",
   LOCATION:
     "https://www.google.com/maps/place/082+03+Janov%C3%ADk/@48.8372096,21.2622544,14z/data=!3m1!4b1!4m5!3m4!1s0x473ee63bf3fac421:0x400f7d1c6975850!8m2!3d48.8359387!4d21.2855172",
@@ -49,17 +51,17 @@ export const EXPERIENCE_DATA = {
   HEADING: "EXPERIENCES",
   EXPERIENCES: [
     {
-      ROLE: "JUNIOR SALESFORCE DEVELOPER",
+      ROLE: "JUNIOR SOFTWARE DEVELOPER",
       COMPANY_NAME: "Green Fox Academy",
       DURATION: "02/2022 - 07/2022",
       DESCRIPTION: [
-        "Working on analyzing, story pointing and implementing the user stories",
-        "Basic experience in SFDC development in implementing Apex classes, Apex Test classes, Apex Triggers, Visual force pages and LWC",
-        "Good Experience with SFDC Administrative tasks like creation profiles, roles, users, page layouts, email templates, workflows, approvals, validation rules, reports and dashboards",
-        "Ability to write SOQL and SOSL queries accross multiple objects",
-        "Good experience in using Visal Studio Code with SF enabled plugin for implementing Apex programing language using cloud platform",
-        "Experience in using Git / GitHub and JIRA",
-        "Experience with technologies including HTML5, CSS3, JavaStript, JSON, REST API and OOP(JAVA)"
+        "Working on analyzing, story pointing and implementing the user stories.",
+        "Basic experience in SFDC development in implementing Apex classes, Apex Test classes, Apex Triggers, Visual force pages and LWC.",
+        "Good Experience with SFDC Administrative tasks like creation profiles, roles, users, page layouts, email templates, workflows, approvals, validation rules, reports and dashboards.",
+        "Ability to write SOQL and SOSL queries accross multiple objects.",
+        "Good experience in using Visal Studio Code with SF enabled plugin for implementing Apex programing language using cloud platform.",
+        "Experience in using Git / GitHub and JIRA.",
+        "Hands on experience with technologies including HTML5, CSS3, JavaStript, JSON, REST API and OOP."
       ]
     },
     {
@@ -67,12 +69,12 @@ export const EXPERIENCE_DATA = {
       COMPANY_NAME: "Faurecia Slovakia s.r.o., Kosice",
       DURATION: "03/2012 - 12/2021",
       DESCRIPTION: [
-        "Trained and managed team of 4 people on QUA department",
-        "Supported new product launches to ensure that supplier quality meets the required standards",
-        "Issued complaints, reviewed and managed the supplier containment and corrective actions",
-        "Conducted onsite supplier audits as scheduled or as needed",
-        "Worked directly with all 45 vendors to improve product quality, performance and reliability",
-        "Organized and led various supplier´s meetings concerning escalation, communication of quality expectation"
+        "Regular active comunication with vendors and customers.",
+        "Supported new product launches to ensure that supplier quality meets the required standards.",
+        "Conducted onsite supplier audits as scheduled or as needed.",
+        "Trained and supervised team of 4 people on QUA department.",
+        "Worked directly with all 45 vendors to improve product quality, performance and reliability.",
+        "Organized and led various supplier´s meetings concerning escalation, communication of quality expectation."
       ]
     }
   ]
@@ -108,7 +110,7 @@ export const SKILLS_DATA = {
       SKILLS_LIST: [
         { NAME: "JAVA", LEVEL: "25" },
         { NAME: "APEX", LEVEL: "25" },
-        { NAME: "SOQL/SOSL", LEVEL: "25" }
+        { NAME: "SQL/SOQL/SOSL", LEVEL: "25" }
       ]
     },
     {
@@ -129,4 +131,19 @@ export const LANGUAGES_DATA = {
 export const INTEREST_DATA = {
   HEADING: "INTERESTS",
   LIST: ["Gym", "Hiking", "Traveling"]
+};
+export const CERTIFICATION_DATA = {
+  HEADING: "CERTIFICATIONS",
+  CERTIFICATES: [
+    {
+      NAME: "Junior Software Developer",
+      DESCRIPTION:
+        "Java, Unix comands, GIT versioning, OOP, Salesforce, Scrum methodology"
+    },
+    {
+      NAME: "Process auditor VDA 6.3 (2016)",
+      DESCRIPTION:
+        "Performing process audits acc. to VDA 6.3 and corresponding requirement of the German Automotive Industry"
+    }
+  ]
 };

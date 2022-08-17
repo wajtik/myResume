@@ -5,26 +5,19 @@
     <div class="slds-var-p-around_none slds-grid slds-wrap">
       <!--IMAGE-->
       <div
-        class="slds-col slds-size_1-of-1 slds-medium-size_4-of-12 slds-large-size_4-of-12"
+        class="slds-col slds-size_1-of-1 slds-medium-size_4-of-12 slds-large-size_4-of-12 slds-align_absolute-center"
       >
-        <img src={profileImage} alt="profile pic" class="profile-pic" />
+        <img src={profileImage} alt="profile pic" class="profile_pic" />
       </div>
 
       <div
         class="slds-col slds-size_1-of-1 slds-medium-size_8-of-12 slds-large-size_8-of-12 shade"
       >
-        <div class="roleHeading">
-          <span class="mobile" style="font-weight: 900"
-            >{userDetails.ROLE}</span
-          >
-          &nbsp; I am a self-motivated professional passionate about quality
-          control. I have almost 10 years of work-related experience in Quality
-          assurance in the automotive industry. I am punctual, dependable and
-          can be counted upon to finish what I start. I consider myself
-          hardworking, reliable, helpful, outgoing, organized, honest and
-          cooperative.
+        <div class="role_heading">
+          <span class="role">{userDetails.ROLE}</span>
+          <span class="role_desc">{userDetails.SUMMARY}</span>
         </div>
-        <span class="nameHeading mobile_text_center">{userDetails.NAME}</span>
+        <h2 class="name_heading">{userDetails.NAME}</h2>
       </div>
     </div>
   </header>
